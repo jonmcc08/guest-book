@@ -1,4 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>TEMPORARY</h1>
+
+<h1>Messages</h1>
+{% for message in messages %}
+    <div class="messages">
+        <hr>
+        Name: {{ message.name }} <br>
+        Email: {{ message.email }} <br>
+        Tel: {{ message.telephone }} <br>
+        Message : <br>
+        <div class="contentMessage"> {{ message.message }} </div>
+    </div>
+{% endfor %}
 {% endblock %}
