@@ -1,15 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
-
-<h1>Messages</h1>
+<h2>Messages</h2>
 {% for message in messages %}
     <div class="messages">
         <hr>
         Name: {{ message.name }} <br>
         Email: {{ message.email }} <br>
-        Tel: {{ message.telephone }} <br>
+        Telephone: {{ message.telephone }} <br>
         Message : <br>
         <div class="contentMessage"> {{ message.message }} </div>
+        <div class="time">
+            <p>{{ message.time }}</p>
+        </div>
     </div>
 {% endfor %}
+<br>
+<br>
+<!--Skapar 2 breaks för footern.-->
 {% endblock %}

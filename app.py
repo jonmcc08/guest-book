@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, request
-import json, os, time
+import json, os
+from datetime import datetime, timezone
 
 json_file = "users.json"
 
@@ -24,7 +25,10 @@ def write():
 
 @app.route('/send', methods=["POST", "GET"])
 def send():
+    time = datetime.now(timezone.utc)
+    formatedTime = time.strftime('%Y-%m-%d %I:%M %p %Z')
     information = request.form.to_dict()
+    information.update({"time": formatedTime})
     currentFile = loadFile()
     currentFile.append(information)
     print(information)
@@ -34,13 +38,13 @@ def send():
             all_info = False
 
     if not all_info:
-        return "Missing information, please try again!"
+        return "Missing information, please try again!", {"Refresh": "3; url=/write"}
     
 
     with open(json_file, 'w', encoding="utf-8") as file:
         json.dump(currentFile, file, indent=4)
 
-    return "Sent information"
+    return "Sent information", {"Refresh": "3; url=/"}
 
 
 if __name__ == "__main__":

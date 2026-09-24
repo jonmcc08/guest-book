@@ -1,14 +1,30 @@
 [
     {
-        "name": "Jonathan Mc Cullagh",
-        "email": "jonathan.mccullagh@skola.taby.se",
-        "telephone": "0730964766",
-        "message": "Hi"
+        "name": "Test",
+        "email": "test@gmail.com",
+        "telephone": "072222222",
+        "message": "Test",
+        "time": "2026-09-24 11:27 AM UTC"
     },
     {
-        "name": "Hej!",
-        "email": "34903",
-        "telephone": "2309",
-        "message": "hello"
+        "name": "Test",
+        "email": "test@gmail.com",
+        "telephone": "072222222",
+        "message": "Test",
+        "time": "2026-09-24 11:27 AM UTC"
+    },
+    {
+        "name": "Test",
+        "email": "test@gmail.com",
+        "telephone": "072222222",
+        "message": "Test",
+        "time": "2026-09-24 11:27 AM UTC"
+    },
+    {
+        "name": "Test",
+        "email": "test@gmail.com",
+        "telephone": "072222222",
+        "message": "Test",
+        "time": "2026-09-24 11:27 AM UTC"
     }
 ]
