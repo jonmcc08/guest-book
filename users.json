@@ -26,5 +26,19 @@
         "telephone": "072222222",
         "message": "Test",
         "time": "2026-09-24 11:27 AM UTC"
+    },
+    {
+        "name": "Jonathan Mc Cullagh",
+        "email": "jonathan.mccullagh@skola.taby.se",
+        "telephone": "9595",
+        "message": "j4iosgs",
+        "time": "2026-09-25 09:18 AM UTC"
+    },
+    {
+        "name": "holger",
+        "email": "holger@gmail.com",
+        "telephone": "459043",
+        "message": "Hej!",
+        "time": "2026-09-25 09:19 AM UTC"
     }
 ]
